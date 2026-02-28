@@ -1,0 +1,68 @@
+#################################
+# Maven
+#################################
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+#################################
+# IntelliJ IDEA
+#################################
+.idea/
+*.iml
+out/
+
+#################################
+# VS Code（併用する場合）
+#################################
+.vscode/
+
+#################################
+# OS files
+#################################
+.DS_Store
+Thumbs.db
+
+#################################
+# Logs
+#################################
+*.log
+
+#################################
+# Compiled class files
+#################################
+*.class
+
+#################################
+# Local environment files
+#################################
+.env
+application-local.yml
+application-dev.yml
+
+#################################
+# Docker
+#################################
+docker-compose.override.yml
+
+#################################
+# Archive files
+#################################
+*.jar
+*.war
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+#################################
+# JVM crash logs
+#################################
+hs_err_pid*
+replay_pid*
