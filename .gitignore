@@ -43,8 +43,6 @@ Thumbs.db
 # Local environment files
 #################################
 .env
-application-local.yml
-application-dev.yml
 
 #################################
 # Docker
