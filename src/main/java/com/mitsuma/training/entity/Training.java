@@ -59,7 +59,11 @@ public class Training {
     /**
      * trainings 1 : N training_details
      */
-    @OneToMany(mappedBy = "training")
+    @OneToMany(
+            mappedBy = "training",
+            cascade = CascadeType.ALL, //Trainingに対する操作（更新・削除など）を紐づくTrainingDetailにも自動で伝播
+            orphanRemoval = true //親との関連が切れた子エンティティを削除
+    )
     private List<TrainingDetail> trainingDetails;
 
 

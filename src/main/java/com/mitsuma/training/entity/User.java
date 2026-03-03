@@ -40,7 +40,11 @@ public class User {
      *   private User user;
      *   を参照している
      */
-    @OneToMany(mappedBy = "user")
+    @OneToMany(
+            mappedBy = "user",
+            cascade = CascadeType.ALL, //Userに対する操作（更新・削除など）を紐づくTrainingにも自動で伝播
+            orphanRemoval = true //親との関連が切れた子エンティティを削除
+    )
     private List<Training> trainings;
 
     // ===== getter / setter =====
